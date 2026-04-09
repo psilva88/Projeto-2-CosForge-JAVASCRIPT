@@ -15,6 +15,8 @@ Um App para centralizar e estruturar tutoriais de cosplay em formato prático, f
 
 • Luiz Gustavo Barbosa Machado
 
+• Georgio de Azevedo Oliveira Filho
+
 Link dos Slides: 
 
 LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK
