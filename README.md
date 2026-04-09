@@ -4,3 +4,17 @@
 
 # 📢Projeto 2 - CosForge
 Este projeto consiste em um formulário para o cadastro de componentes de hardware e peças de computador (como Placas de Vídeo, Processadores, Memória RAM, etc.). O objetivo principal é aplicar Validação de formulário com JavaScript.
+
+ Grupo:
+ 
+• Arthur Pereira Silva
+
+• Bernardo Ramos dos Santos
+
+• Rodrigo Lira Rodrigues
+
+• Luiz Gustavo Barbosa Machado
+
+Link dos Slides: 
+
+LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK LINK
