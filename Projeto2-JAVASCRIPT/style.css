@@ -1,0 +1,54 @@
+/* RESET BÁSICO */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f4f0fa; color: #333; }
+
+/* NAVBAR (TOPO) */
+.navbar { background-color: #4a148c; /* Roxo escuro */ color: white; padding: 15px 30px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.nav-logo h1 { color: #ff80ab; /* Rosa claro */ margin: 0; font-size: 1.8rem; }
+.nav-busca { flex: 1; margin: 0 30px; display: flex; }
+.nav-busca input { width: 100%; padding: 10px; border-radius: 5px; border: none; outline: none; }
+.nav-acoes { display: flex; align-items: center; gap: 20px; }
+.btn-nav { background: none; border: 1px solid #ff80ab; color: #ff80ab; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+.btn-nav:hover { background-color: #ff80ab; color: #4a148c; }
+.btn-criar { background-color: #ff80ab; color: #4a148c; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+.perfil-img { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #ff80ab; object-fit: cover; cursor: pointer; }
+
+/* LAYOUT PRINCIPAL (GRID) */
+.container-principal { display: flex; max-width: 1300px; margin: 30px auto; gap: 30px; padding: 0 20px; min-height: 70vh; }
+.conteudo-esquerdo { flex: 3; }
+.lateral-direita { flex: 1; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); height: fit-content; }
+
+/* FEED ESTILO AMAZON (VITRINE) */
+.vitrine-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.card-projeto { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s; border: 1px solid #eee; }
+.card-projeto:hover { transform: translateY(-5px); border-color: #9c27b0; }
+.card-img { width: 100%; height: 200px; object-fit: cover; }
+.card-info { padding: 15px; }
+.card-info h3 { font-size: 1.1rem; color: #4a148c; margin-bottom: 5px; }
+.preco { font-size: 1.2rem; font-weight: bold; color: #e91e63; margin-top: 10px; }
+
+/* TELA DE DETALHES DO PROJETO */
+.detalhes-container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.btn-voltar { background: transparent; border: 1px solid #4a148c; color: #4a148c; padding: 5px 15px; border-radius: 5px; cursor: pointer; margin-bottom: 20px; }
+.detalhes-header { display: flex; gap: 30px; margin-bottom: 30px; }
+.detalhes-img { width: 300px; border-radius: 10px; }
+.detalhes-info h2 { color: #4a148c; font-size: 2rem; margin-bottom: 10px; }
+.badges { margin: 15px 0; }
+.badge { background-color: #f3e5f5; color: #9c27b0; padding: 5px 10px; border-radius: 15px; font-size: 0.85rem; font-weight: bold; margin-right: 10px; }
+.materiais-lista li { background: #fafafa; margin-bottom: 10px; padding: 10px; display: flex; justify-content: space-between; border-left: 4px solid #e91e63; }
+.btn-afiliado { background-color: #e91e63; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; }
+.btn-premium { background-color: #4a148c; color: white; width: 100%; padding: 15px; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; margin-top: 20px; }
+
+/* BOUNTY SYSTEM */
+.bounty-item { background: #f4f0fa; padding: 10px; border-radius: 5px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+.btn-votar { background: #9c27b0; color: white; border: none; padding: 5px; border-radius: 5px; cursor: pointer; }
+
+/* RODAPÉ E CROWDFUNDING */
+.rodape { background-color: #311060; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+.rodape h3 { color: #ff80ab; margin-bottom: 10px; }
+.btn-crowdfunding { background-color: #ff80ab; color: #311060; font-size: 1.2rem; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 15px; }
+
+/* POPUP (MODAL) EM ALTA */
+.modal-fundo { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: flex; justify-content: center; align-items: center; z-index: 1000; }
+.modal-conteudo { background: white; padding: 30px; border-radius: 10px; width: 500px; max-width: 90%; }
+.btn-fechar { float: right; background: red; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px; }
