@@ -1,0 +1,97 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS E FUNDO
+   ========================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+
+body { 
+    background-color: #f8f9fc;
+    background-image: radial-gradient(#d3cce3 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #333;
+}
+
+/* =========================================
+   MENU SUPERIOR (NAVBAR)
+   ========================================= */
+.navbar { 
+    background: linear-gradient(135deg, #4a148c 0%, #c2185b 100%);
+    color: white; padding: 15px 30px; display: flex; align-items: center; justify-content: space-between; 
+    position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
+}
+
+/* Controlando o tamanho da logo */
+.img-logo {
+    height: 70px;
+    width: auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.img-logo:hover { transform: scale(1.05); }
+
+.nav-busca { flex: 1; margin: 0 40px; display: flex; }
+.nav-busca input { width: 100%; padding: 12px; border-radius: 8px; border: none; outline: none; font-size: 1rem; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); }
+.nav-acoes { display: flex; align-items: center; gap: 20px; }
+
+.btn-nav { background: rgba(255,255,255,0.2); border: 1px solid white; color: white; padding: 8px 15px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; backdrop-filter: blur(5px); }
+.btn-nav:hover { background: white; color: #c2185b; }
+.btn-criar { background: white; color: #4a148c; border: none; padding: 8px 15px; border-radius: 8px; cursor: pointer; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: 0.3s; }
+
+.perfil-usuario { display: flex; alignItems: center; gap: 10px; }
+.perfil-usuario img { border-radius: 50%; }
+.perfil-usuario span { font-weight: bold; font-size: 0.9rem; }
+
+/* =========================================
+   TELA DE LOGIN
+   ========================================= */
+.login-container { display: flex; justify-content: center; align-items: center; height: 100vh; }
+.login-box { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(74, 20, 140, 0.15); width: 400px; text-align: center; border-top: 5px solid #c2185b; }
+.login-box h2 { color: #4a148c; margin-bottom: 20px; }
+.login-box input { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; }
+.btn-login { width: 100%; padding: 12px; background: linear-gradient(135deg, #4a148c, #c2185b); color: white; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.btn-login:hover { opacity: 0.9; transform: translateY(-2px); }
+
+/* =========================================
+   ESTRUTURA PRINCIPAL E FEED (ESTILO AMAZON)
+   ========================================= */
+.container-principal { display: flex; max-width: 1400px; margin: 30px auto; gap: 30px; padding: 0 20px; min-height: 70vh; }
+.conteudo-esquerdo { flex: 3; display: flex; flex-direction: column; gap: 40px; }
+
+.titulo-secao { color: #4a148c; font-size: 1.5rem; margin-bottom: 15px; border-left: 4px solid #c2185b; padding-left: 10px; }
+.vitrine-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 25px; }
+.vitrine-em-alta { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 10px; }
+
+.card-projeto { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); cursor: pointer; transition: 0.3s; border: 1px solid transparent; min-width: 240px; }
+.card-projeto:hover { transform: translateY(-5px); border-color: #c2185b; box-shadow: 0 8px 20px rgba(194, 24, 91, 0.2); }
+.card-img { width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #f0f0f0; }
+.card-info { padding: 15px; }
+.card-info h3 { font-size: 1.1rem; color: #333; margin-bottom: 5px; }
+.preco { font-size: 1.3rem; font-weight: 800; color: #c2185b; margin-top: 10px; }
+
+/* =========================================
+   TELA EXPANDIDA (FICHA TÉCNICA)
+   ========================================= */
+.detalhes-container { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.btn-voltar { background: transparent; border: 2px solid #4a148c; color: #4a148c; padding: 8px 20px; border-radius: 8px; cursor: pointer; margin-bottom: 25px; font-weight: bold; transition: 0.3s; }
+.btn-voltar:hover { background: #4a148c; color: white; }
+.detalhes-header { display: flex; gap: 40px; margin-bottom: 30px; align-items: flex-start; }
+.detalhes-img { width: 350px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+.detalhes-info h2 { color: #333; font-size: 2.2rem; margin-bottom: 15px; }
+.badges { margin: 20px 0; display: flex; gap: 10px; }
+.badge { background: #fce4ec; color: #c2185b; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; }
+.materiais-lista li { background: #fafafa; margin-bottom: 10px; padding: 15px; display: flex; justify-content: space-between; align-items: center; border-left: 4px solid #c2185b; border-radius: 0 8px 8px 0; }
+.btn-afiliado { background: #f50057; color: white; border: none; padding: 8px 15px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+.btn-premium { background: linear-gradient(135deg, #4a148c, #c2185b); color: white; width: 100%; padding: 18px; border: none; border-radius: 8px; font-size: 1.2rem; font-weight: bold; cursor: pointer; margin-top: 25px; transition: 0.3s; }
+.btn-premium:hover { box-shadow: 0 5px 15px rgba(194, 24, 91, 0.4); }
+
+/* =========================================
+   BOUNTY SYSTEM (RANKING LATERAL) E RODAPÉ
+   ========================================= */
+.lateral-direita { flex: 1; background: white; padding: 20px; border-radius: 12px; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.05); height: fit-content; }
+.bounty-item { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+.bounty-item.primeiro-lugar { border-color: #ffca28; background-color: #fffde7; }
+.btn-votar { background: #4a148c; color: white; border: none; padding: 8px 15px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+.btn-votar:hover { background: #c2185b; }
+
+.rodape { background: #1a0b2e; color: white; text-align: center; padding: 40px; margin-top: 50px; border-top: 5px solid #c2185b; }
+.btn-crowdfunding { background: #c2185b; color: white; font-size: 1.1rem; padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+.btn-crowdfunding:hover { background: #ff4081; transform: scale(1.05); }
